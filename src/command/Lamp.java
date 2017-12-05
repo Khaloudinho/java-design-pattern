@@ -6,13 +6,13 @@ public class Lamp implements Device {
 
     @Override
     public void switchOn() {
-        System.out.println("La lampe est allumée !");
+        System.out.println("The lamp is on !");
         this.on = true;
     }
 
     @Override
     public void switchOff() {
-        System.out.println("La lampe est éteinte !");
+        System.out.println("The lamp is off !");
         this.on = false;
     }
 

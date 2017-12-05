@@ -3,16 +3,14 @@ package command;
 public class Main {
     public static void main(String[] args){
 
-        AppareilElectronique lampe = new Lampe();
+        Device lamp = new Lamp();
 
-        Command allumer = new Allumer(lampe);
-        Command eteindre = new SwitchOff(lampe);
-        Command clignoter = new Clignoter(lampe);
+        Command switchOn = new SwitchOff(lamp);
+        Command switchOff = new SwitchOff(lamp);
 
         Remote t = new Remote();
-        t.addCommand(allumer);
-        t.addCommand(eteindre);
-        // t.addCommand(clignoter);
+        t.addCommand(switchOn);
+        t.addCommand(switchOff);
 
         t.performAllCommands();
 

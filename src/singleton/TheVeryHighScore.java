@@ -8,9 +8,7 @@ public class TheVeryHighScore {
     private TheVeryHighScore() {}
 
     public synchronized static TheVeryHighScore getInstance() {
-        if (instance == null){
-            instance = new TheVeryHighScore();
-        }
+        if (instance == null) instance = new TheVeryHighScore();
         return instance;
     }
 

@@ -6,10 +6,10 @@ public class Main {
         AppareilElectronique lampe = new Lampe();
 
         Command allumer = new Allumer(lampe);
-        Command eteindre = new Eteindre(lampe);
+        Command eteindre = new SwitchOff(lampe);
         Command clignoter = new Clignoter(lampe);
 
-        Telecommande t = new Telecommande();
+        Remote t = new Remote();
         t.addCommand(allumer);
         t.addCommand(eteindre);
         // t.addCommand(clignoter);

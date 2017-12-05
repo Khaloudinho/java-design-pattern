@@ -1,26 +1,26 @@
 package command;
 
-public class Lampe implements AppareilElectronique {
+public class Lamp implements Device {
 
-    private boolean on = false;
+    private boolean on;
 
     @Override
-    public void allumer() {
+    public void switchOn() {
         System.out.println("La lampe est allumée !");
         this.on = true;
     }
 
     @Override
-    public void eteindre() {
+    public void switchOff() {
         System.out.println("La lampe est éteinte !");
         this.on = false;
     }
 
     @Override
-    public void clignoter() {
+    public void flash() {
         while (true) {
-            allumer();
-            eteindre();
+            switchOn();
+            switchOff();
         }
     }
 }

@@ -1,4 +1,4 @@
-package fabrique;
+package factory;
 
 class HighScoreSr extends HighScore {
 

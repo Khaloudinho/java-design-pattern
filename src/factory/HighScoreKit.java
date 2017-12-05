@@ -1,4 +1,4 @@
-package fabrique;
+package factory;
 
 public class HighScoreKit extends HighScore {
 

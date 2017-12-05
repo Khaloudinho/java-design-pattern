@@ -1,4 +1,4 @@
-package fabrique;
+package factory;
 
 abstract class HighScore {
 
